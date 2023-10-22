@@ -1,0 +1,31 @@
+{
+    "name": "tech-blog",
+    "version": "1.0.0",
+    "description": "",
+    "main": "sever.js",
+    "scripts": {
+        "start": "node server.js",
+        "seed": "node seed/seeds.js",
+        "watch": "nodemon server.js",
+        "sql": "mysql -u root -p techblog_db"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "MIT",
+    "dependencies": {
+        "bcrypt": "5.1.1",
+        "mysql2": "3.6.0",
+        "dotenv": "^16.3.1",
+        "nodemon": "^3.0.1",
+        "express": "^4.18.2",
+        "sequelize": "^6.33.0",
+        "handlebars": "^4.7.8",
+        "express-session": "^1.17.3",
+        "espress-handlebars": "7.1.2",
+        "connect-session-sequelize": "^7.1.7"
+},
+"devDepenendcies": {
+    "eslint": "8.48.0"
+}
+
+}
