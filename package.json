@@ -21,7 +21,6 @@
         "sequelize": "^6.33.0",
         "handlebars": "^4.7.8",
         "express-session": "^1.17.3",
-        "espress-handlebars": "7.1.2",
         "connect-session-sequelize": "^7.1.7"
 },
 "devDepenendcies": {
