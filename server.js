@@ -6,7 +6,7 @@ const sequelize = require("./config/connection");
 const exphbs = require("express-handlebars");
 const hbs = exphbs.create({ helpers: require("./utilis/helpers")});
 
-const app = espress();
+const app = express();
 const PORT = process.env.PORT || 3001;
 
 const sess = {
@@ -22,7 +22,7 @@ const sess = {
 app.use(session(sess));
 
 app.use(express.json());
-app.use(express.urlencoded({ extended: ture}));
+app.use(express.urlencoded({ extended: true}));
 
 app.use(express.static("public"));
 app.engine("handlebars", hbs.engine);
