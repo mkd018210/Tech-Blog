@@ -10,7 +10,7 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 
 const sess = {
-    sercret: 'Super secret secret',
+    secret: 'Super secret secret',
     cookie: {},
     resave: false,
     saveUninitialized: true,
@@ -28,14 +28,7 @@ app.use(express.static("public"));
 app.engine("handlebars", hbs.engine);
 app.set("view engine", "handlebars");
 
-app.use(
-    session({
-        secret: process.env.SECRET,
-        store: new SequelizeStore({ db: sequelize }),
-        resave: false,
-        saveUninitialized: false,
-    })
-);
+
 
 app.use(routes);
 
