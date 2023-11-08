@@ -1,8 +1,10 @@
 const router = require("express").Router();
 const { Post, User, Comment } = require("../models");
 const authorize = require("../utilis/auth");
+console.log("inside the root home-rourtes.js")
 
 router.get("/", async (req, res) => {
+    console.log ('Inside the get route')
     try {
         const result = await Post.findAll({
             include: { model: User

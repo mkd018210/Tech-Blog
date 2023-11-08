@@ -5,7 +5,7 @@
     "main": "sever.js",
     "scripts": {
         "start": "node server.js",
-        "seed": "node seed/seeds.js",
+        "seed": "node seeds/index.js",
         "watch": "nodemon server.js",
         "sql": "mysql -u root -p techblog_db"
     },
